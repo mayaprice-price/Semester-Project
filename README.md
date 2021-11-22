@@ -4,13 +4,17 @@ CS 202 Semester Project, F21
 The semester project is a group project. It counts for four programming assignments. As noted below, if a group successfully completes the challenge level, a grade of 120% is possible.
 
 Overview
-This project is designed to provide experience in working with binary files and pre-defined file formats manipulating data in arrays in a variety of formats developing a terminal-based user interface using inheritance, abstract classes and interfaces, and composition developing a modular design using good design and development principles
+This project is designed to provide experience in 
+  - working with binary files and pre-defined file formats 
+  - manipulating data in arrays in a variety of formats 
+  - developing a terminal-based user interface using inheritance, abstract classes and interfaces, and composition 
+  - developing a modular design using good design and development principles
 
 Project Levels
-Base Level: All groups must attempt the base level project, which consists of building the application as described here with a console user interface.
-
-Challenge Level: A group can make a maximum of 120 by adding a graphical user interface using the Qt framework.
-
+  - Base Level: All groups must attempt the base level project, which consists of building the application as described here with a console user interface.
+  
+  - Challenge Level: A group can make a maximum of 120 by adding a graphical user interface using the Qt framework.
+  
 Project Description
 In this project, you will create an application that can load audio data from wav files, manipulate the data to add common audio effects such as echo and compression and save the files for later playback.
 
