@@ -63,33 +63,33 @@ File Metadata
 
 The data to be displayed in step (1):
 
-filename
-
-sample rate
-
-bits per sample
-
-stereo or mono
-
+  - filename
+  
+  - sample rate
+  
+  - bits per sample
+  
+  - stereo or mono
+  
 Required Processors
 The following are the processes to be implemented
 
-normalization
+- normalization
 
-Algorithm: The largest sample value in the data is found, and then the data is scaled so that that value is the maximum possible value. This maximizes the amplitude of the final waveform.
+   - Algorithm: The largest sample value in the data is found, and then the data is scaled so that that value is the maximum possible value. This maximizes the amplitude of the final waveform.
 
-Example for floating-point data
+    - Example for floating-point data
 
-Original data: n = {0,0.2,0.4,0,-0.3}
+      - Original data: n = {0,0.2,0.4,0,-0.3}
+    
+      - Largest absolute value: 0.4, so scaling value s = 1/0.4 = 2.5
+    
+      - Scaled result: n_scaled = {0, 0.5,1,0,-0.75}
 
-Largest absolute value: 0.4, so scaling value s = 1/0.4 = 2.5
+- echo
 
-Scaled result: n_scaled = {0, 0.5,1,0,-0.75}
+    - Algorithm: Samples are copied, scaled, and added to later locations in the sample buffer to create an echo effect.
 
-echo
+- gain adjustment
 
-Algorithm: Samples are copied, scaled, and added to later locations in the sample buffer to create an echo effect.
-
-gain adjustment
-
-Algorithm: Samples are multiplied by a scaling factor that raises or lowers the overall amplitude of the wave file
+    - Algorithm: Samples are multiplied by a scaling factor that raises or lowers the overall amplitude of the wave file
