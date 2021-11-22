@@ -1,5 +1,13 @@
 # Semester-Project
 
+Team Members: 
+- Maya Price
+- Mikayla Arabian
+- Greg Jordan
+
+Project Type:
+- Basic
+
 CS 202 Semester Project, F21
 The semester project is a group project. It counts for four programming assignments. As noted below, if a group successfully completes the challenge level, a grade of 120% is possible.
 
