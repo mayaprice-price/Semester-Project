@@ -21,26 +21,31 @@ In this project, you will create an application that can load audio data from wa
 Background
 Digital audio files consist of thousands of samples. A sample is a measurement of the amplitude of the signal coming from a microphone or electronic instrument at an instant in time. The process of turning the sampled value into a binary number is called quantization. The process is referred to as pulse code modulation.
 
+
 Sample Rates
 Modern digital audio systems typically record 44,100 or 48,000 samples per second per channel, so a stereo recording collects 88,200 or 176,400 samples, respectively, for every second of audio recorded. The sample rate directly affects the system frequency response.
+
 
 Quantization (bit depth)
 The number of bits used to store a sample determines the accuracy of the sample. The higher number of bits used, the more accurate and less noisy the samples. Typical sample formats are 8, 16, 24, and 32 bits. We will be using wav files that are either 8 or 16 bits, and either mono or stereo.
 
+
 For more information, see https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html (Links to an external site.)
+
 
 File Formats and Compression
 Audio files are binary rather than text. The data can be compressed (not zip!) in order to reduce the file size or they can contain uncompressed sample values. Compressed formats include mp3 and AAC. We will be working with uncompressed files in the wav file format. The format for a wav file can be found here: http://soundfile.sapp.org/doc/WaveFormat/ (Links to an external site.)
+
 
 Handling binary wav files is explained here:
 https://www.youtube.com/watch?v=7uQjw5PY63s (Links to an external site.)
 
 
 Basic Level Requirements
-The basic level application presents the user with a console interface.
+- The basic level application presents the user with a console interface.
 
 Program Flow
-The following pseudo-code shows the required application flow for the base level console version:
+- The following pseudo-code shows the required application flow for the base level console version:
 
 Start: Present start menu
 If user selects quit, exit program
