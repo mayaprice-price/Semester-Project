@@ -97,3 +97,46 @@ The following are the processes to be implemented
 - gain adjustment
 
     - Algorithm: Samples are multiplied by a scaling factor that raises or lowers the overall amplitude of the wave file
+
+
+Architectural Requirements (Basic and Challenge)
+The system design is to be modular to facilitate dividing up the development work, and more importantly, to aid in testing and expansion of the application's capabilities. The required modules are
+
+  - File management: manages reading and writing of files in the required formats
+  
+  - User interaction: manages the console user interaction. In the case of the challenge version using Qt, the module should provide a single point of entry to the processors, etc.
+  
+  - Processing: management of sample buffers, application of processors, etc. Each module will consist of one or more classes that are access through one or more interfaces.
+
+As needed, you can add more modules.
+
+Documentation
+All header files and functions must be documented using the Doxygen Javadoc format. The README page should include
+
+  - A line saying whether this is a basic or challenge level project
+  - The full names of each team member
+  - The contribution of each team member
+  - A UML diagram showing the basic design
+  - A section detailing issues, including any functionality that is missing
+  - A section detailing the challenges that you encountered in the project
+  - Instructions for building the application if anything is required beyond make
+ 
+ The Doxygen files should be generated into a folder called docs.
+ 
+Grading
+This project will be graded using standard grading with partial credit. There will not be an opportunity for redo, as this project is due toward the end of the semester and there will not be time for redo and grading.
+
+Grading will be based on
+
+  - use of Git
+  
+  - correct use of C++ features such as templates, inheritance, interfaces, exceptions, and composition
+  
+  - correctness of the implementation of the required processes
+ 
+  - runtime stability
+  
+See the rubric for details.
+
+What to Turn In
+All source code must be managed in Github, and the repository URL turned in to WebCampus. Include the team member names and your group number in the submission.
